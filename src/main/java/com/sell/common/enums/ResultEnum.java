@@ -46,7 +46,7 @@ public enum  ResultEnum {
 
     LOGOUT_SUCCESS(26, "登出成功"),
 
-    ACCESS_TOKEN_ERROR(100, "访问令牌错误"),
+    ACQUIRE_TOKEN_ERROR(100, "获取令牌错误"),
     ;
     private Integer code;
 
