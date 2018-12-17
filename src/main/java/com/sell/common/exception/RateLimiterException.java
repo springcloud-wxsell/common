@@ -4,21 +4,21 @@ import com.sell.common.enums.ResultEnum;
 
 /**
  * @author WangWei
- * @Title: ProductException
+ * @Title: RateLimiterException
  * @ProjectName common
- * @date 2018/12/6 21:03
- * @description: 商品异常
+ * @date 2018/12/17 17:30
+ * @description: 限流异常
  */
-public class ProductException extends RuntimeException {
+public class RateLimiterException extends RuntimeException {
 
     private Integer code;
 
-    public ProductException(Integer code, String message) {
+    public RateLimiterException(Integer code, String message) {
         super(message);
         this.code = code;
     }
 
-    public ProductException(ResultEnum resultEnum) {
+    public RateLimiterException(ResultEnum resultEnum) {
         super(resultEnum.getMessage());
         this.code = resultEnum.getCode();
     }

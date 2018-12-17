@@ -8,7 +8,7 @@ import com.sell.common.enums.ResultEnum;
  * @Title: OrderException
  * @ProjectName common
  * @date 2018/12/3 20:50
- * @description:
+ * @description: 订单异常
  */
 public class OrderException extends RuntimeException {
 
