@@ -22,7 +22,7 @@ public enum  ResultEnum {
 
     ORDER_NOT_EXIST(12, "订单不存在"),
 
-    ORDERDETAIL_NOT_EXIST(13, "订单详情不存在"),
+    ORDER_DETAIL_NOT_EXIST(13, "订单详情不存在"),
 
     ORDER_STATUS_ERROR(14, "订单状态不正确"),
 
@@ -45,6 +45,8 @@ public enum  ResultEnum {
     LOGIN_FAIL(25, "登录失败，登录信息不正确"),
 
     LOGOUT_SUCCESS(26, "登出成功"),
+
+    ROLE_PERMISSION_ERROR(27, "角色权限有误"),
 
     ACQUIRE_TOKEN_ERROR(100, "获取令牌错误"),
     ;

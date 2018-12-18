@@ -1,6 +1,7 @@
 package com.sell.common.utils;
 
 
+import com.sell.common.enums.ResultEnum;
 import com.sell.common.vo.ResultVO;
 
 /**
@@ -28,6 +29,13 @@ public class ResultVOUtils {
         ResultVO resultVO = new ResultVO();
         resultVO.setCode(code);
         resultVO.setMessage(msg);
+        return resultVO;
+    }
+
+    public static ResultVO error(ResultEnum resultEnum) {
+        ResultVO resultVO = new ResultVO();
+        resultVO.setCode(resultEnum.getCode());
+        resultVO.setMessage(resultEnum.getMessage());
         return resultVO;
     }
 }
